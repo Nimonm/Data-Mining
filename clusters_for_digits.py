@@ -90,7 +90,7 @@ def bench_k_means(estimator, name, data):
 def evaluate0(estimator, name, data):
     t0 = time()
     estimator.fit(data)
-    print('%-9s\t\t%.2fs\t\t%i\t%.3f\t\t%.3f\t\t%.3f'
+    print('%-9s\t\t%.2fs\t%i\t%.3f\t%.3f\t%.3f'
           % (name, (time() - t0), estimator.inertia_,
              metrics.normalized_mutual_info_score(labels, estimator.labels_),
              metrics.homogeneity_score(labels, estimator.labels_),
@@ -100,7 +100,7 @@ def evaluate0(estimator, name, data):
 def evaluate1(estimator, name, data):
     t0 = time()
     estimator.fit(data)
-    print('%-9s\t\t%.2fs\t\t%i\t\t%.3f\t\t%.3f\t\t%.3f'
+    print('%-9s\t\t%.2fs\t%i\t%.3f\t%.3f\t%.3f'
           % (name, (time() - t0), 0000,
              metrics.normalized_mutual_info_score(labels, estimator.labels_),
              metrics.homogeneity_score(labels, estimator.labels_),
@@ -133,7 +133,7 @@ comp: Completeness
 """
 
 print(82 * '_')
-print('clusters\t\ttime\t\tinertia\tnor\t\t\thomo\t\t\tcomp')
+print('clusters\ttime\tinertia\tnor\t\thomo\tcomp')
 # evaluate0(KMeans(init='k-means++', n_clusters=n_digits, n_init=10),
 #               name="k-means++", data=data)
 for name, algorithm in zip(clustering_names0, clustering_algorithms0):

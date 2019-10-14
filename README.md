@@ -27,11 +27,11 @@ DBSCAN   		0.02s		0			0.308		0.316		0.301
 __________________________________________________________________________________
 ```
 
-![myplot](C:\Users\zhuli\PycharmProjects\homework_1\myplot.png)
+![myplot](myplot.png)
 
 output for figures_of_digits.py:
 
-![myplot0](C:\Users\zhuli\PycharmProjects\homework_1\myplot0.png)
+![myplot0](myplot0.png)
 
 
 

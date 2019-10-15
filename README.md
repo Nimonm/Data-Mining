@@ -5,12 +5,11 @@
 ## 1. clusters for digit
 
 Code: 
-
+```
   clusters_for_digits.py -> clustering algorithms for the digit dataset and their performance evaluation
-  
   figures_for_digits.py -> drawing to display for the result
-  
   GaussianHelper.py -> a helper for GaussianMixture(@Zhao Yue)
+```
 
 Output for clusters_for_digit.py：
 
@@ -66,8 +65,9 @@ output for figures_of_digits.py:
 ## clusters for document
 
 Code:
-
+```
   cluster_document.py -> clustering algorithms for the document dataset and their performance evaluation
+```
 
 为了加速，实验时先用了PCA和LDA(Latent Dirichlet Allocation)降维，将向量化之后的数据降到低维（2，3，4，5维）再运行算法。
 

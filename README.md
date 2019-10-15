@@ -1,14 +1,18 @@
+
+
 # README
 
+Author:  Zhu Li
 
+Date:  2019/10/05
 
 ## 1. clusters for digit
 
 Code: 
 ```
-  clusters_for_digits.py -> clustering algorithms for the digit dataset and their performance evaluation
-  figures_for_digits.py -> drawing to display for the result
-  GaussianHelper.py -> a helper for GaussianMixture(@Zhao Yue)
+clusters_for_digits.py -> clustering algorithms for the digit dataset and their performance evaluation
+figures_for_digits.py -> drawing to display for the result
+GaussianHelper.py -> a helper for GaussianMixture(@Zhao Yue)
 ```
 
 Output for clusters_for_digit.py：
@@ -66,7 +70,7 @@ output for figures_of_digits.py:
 
 Code:
 ```
-  cluster_document.py -> clustering algorithms for the document dataset and their performance evaluation
+cluster_document.py -> clustering algorithms for the document dataset and their performance evaluation
 ```
 
 为了加速，实验时先用了PCA和LDA(Latent Dirichlet Allocation)降维，将向量化之后的数据降到低维（2，3，4，5维）再运行算法。
@@ -171,7 +175,13 @@ GaussianMix	0.03s	0	0.391	0.448	0.342
 __________________________________________________________________________________
 ```
 
-==================================================================================
+
+
+
+
 致谢：
-  感谢赵跃同学写的GuassianHelper.py，提供了便利。让高斯混合模型可以直接和别的模型一起处理，不用单独处理了。
-==================================================================================
+
+---
+
+​	感谢赵跃同学写的GuassianHelper.py，提供了便利。让高斯混合模型可以直接和别的模型一起处理，不用单独处理了。
+
